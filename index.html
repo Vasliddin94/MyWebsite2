@@ -345,9 +345,6 @@
     
     </script>
     <script>
-        emailjs.sendForm("service_mb8lvm6", "template_5nrqk78", "#myForm")
-    </script>
-    <script>
         // listen to the form submission
         document
           .getElementById("myForm")
@@ -365,9 +362,9 @@
               },
               (error) => {
                 console.log("FAILED...", error);
-                alert("FAILED...", error);
               }
-            );
+            );;
+                alert("FAILED...", error)
           });
       </script>
 </body>
