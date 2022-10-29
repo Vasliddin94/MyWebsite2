@@ -36,6 +36,7 @@ $(document).ready(function() {
     $('.rightHead').click(function(e) {
         e.preventDefault();
         $('#hiddenScreen').slideDown()
+        $('.menu').slideUp()
         setTimeout(() => {
             $('.logo').show(250)
         }, 200);
@@ -121,6 +122,23 @@ $(document).ready(function() {
         }, 500)
         $(this).css('transform', 'scale(1) ');
     })
+    
+
+    //mobile version
+
+    $('.bx-menu-alt-left').click(function(){
+        $('.menu').slideDown();
+        $(this).prop('id', 'arrow');
+        $(this).removeClass('bx-menu-alt-left')
+        $(this).addClass('bx-x')
+
+    });
+
+    $('#arrow').click(function(){
+        $('.menu').slideUp();
+    });
+
+    
     
 
     
