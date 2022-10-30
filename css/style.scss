@@ -927,7 +927,6 @@ label{
         top: 0;
         left: 0;
         background-color: transparent;
-        color: $main-background;
         width: 10%;
     }
 
@@ -939,6 +938,7 @@ label{
     .centerHead{
         width: 100%;
         transition: 0.5s;
+        padding-top: 40%;
     }
     .centerHead ul{
         display: block;
@@ -975,7 +975,22 @@ label{
     #logo{
         display:none;
     }
+
+
+    //Home
+    #home{
+        background-position: -200px;
+    }
+    .mySlides{
+        width: 100%;
+        text-align: center;
+    }
+
+    .slidesText{
+        text-align: center;
+    }
 }
+
 
 
 

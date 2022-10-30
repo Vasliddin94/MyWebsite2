@@ -837,7 +837,6 @@ label {
     top: 0;
     left: 0;
     background-color: transparent;
-    color: #1C1419;
     width: 10%;
   }
   .leftHead {
@@ -847,6 +846,7 @@ label {
   .centerHead {
     width: 100%;
     transition: 0.5s;
+    padding-top: 40%;
   }
   .centerHead ul {
     display: block;
@@ -873,5 +873,15 @@ label {
   }
   #logo {
     display: none;
+  }
+  #home {
+    background-position: -200px;
+  }
+  .mySlides {
+    width: 100%;
+    text-align: center;
+  }
+  .slidesText {
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
