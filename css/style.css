@@ -846,6 +846,7 @@ label {
   }
   .centerHead {
     width: 100%;
+    transition: 0.5s;
   }
   .centerHead ul {
     display: block;
