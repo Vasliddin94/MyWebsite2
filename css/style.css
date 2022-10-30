@@ -823,18 +823,26 @@ label {
   .bx-menu-alt-left {
     position: absolute;
     top: 0;
-    right: 0;
-  }
-  .bxs-up-arrow {
-    position: absolute;
-    top: 0;
-    right: 0;
+    left: 0;
   }
   .bx-menu-alt-left {
     font-size: 32px;
+    transition: 0.5s;
+  }
+  .bx-x {
+    transition: 0.5s;
+  }
+  .menuX {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    color: #1C1419;
+    width: 10%;
   }
   .leftHead {
     width: 100%;
+    padding-top: 20%;
   }
   .centerHead {
     width: 100%;
@@ -845,11 +853,24 @@ label {
     width: 100%;
     text-align: left;
   }
-  #header .bxs-up-arrow {
-    background-color: transparent;
-    z-index: 1233121321;
-    background-color: red;
-    font-size: 32px;
-    position: absolute;
+  .hiddenLeftSide {
+    width: 80%;
+  }
+  .hiddenLeftSide img {
+    padding-top: 20%;
+  }
+  .logoLinks {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  .logoLinks ul i {
+    font-size: 25px;
+  }
+  .logoLinks ul li {
+    margin-right: 0px;
+  }
+  #logo {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

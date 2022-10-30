@@ -29,14 +29,19 @@ $(document).ready(function() {
         e.preventDefault();
         $('#hiddenScreen').slideUp()
         setTimeout(() => {
-            $('.logo').hide(100)
-        }, 200);
+            $('.logo').hide(200)
+        }, 20);
     })
 
     $('.rightHead').click(function(e) {
         e.preventDefault();
         $('#hiddenScreen').slideDown()
         $('.menu').slideUp()
+        $('.menuX').prop('id', 'show');
+        $('.menuX').addClass('bx-menu-alt-left')
+        $('.menuX').removeClass('bx-x');
+        $('.menuX').removeClass('menuX');
+        
         setTimeout(() => {
             $('.logo').show(250)
         }, 200);
@@ -126,16 +131,33 @@ $(document).ready(function() {
 
     //mobile version
 
-    $('.bx-menu-alt-left').click(function(){
+    $('.bx-menu-alt-left').click(function(e){
+        e.preventDefault();
+        if($(this).attr('id') =='show'){
         $('.menu').slideDown();
-        $(this).prop('id', 'arrow');
         $(this).removeClass('bx-menu-alt-left')
-        $(this).addClass('bx-x')
+        $(this).addClass('bx-x');
+        $(this).removeAttr('id');
+        $(this).addClass('menuX');
+        setTimeout(() => {
+            $('#logo').show(250)
+        }, 200);
+        
 
-    });
+        }
 
-    $('#arrow').click(function(){
-        $('.menu').slideUp();
+        else{
+            $('.menu').slideUp();
+            $(this).prop('id', 'show');
+            $(this).addClass('bx-menu-alt-left')
+            $(this).removeClass('bx-x');
+            $(this).removeClass('menuX');
+            setTimeout(() => {
+                $('#logo').hide(250)
+            }, 20);
+
+        }
+        
     });
 
     
