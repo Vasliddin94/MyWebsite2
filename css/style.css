@@ -845,11 +845,8 @@ label {
   }
   .centerHead {
     width: 100%;
-<<<<<<< HEAD
-    margin-top: 40%;
-=======
-    transition: 0.5s;
->>>>>>> d8025cfbfc3cabe231eca33eff6d34d699618ba1
+    padding-top: 40%;
+    position: relative;
   }
   .centerHead ul {
     display: block;
