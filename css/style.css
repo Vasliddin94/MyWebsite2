@@ -290,15 +290,9 @@ body {
   transition: 0.5s;
 }
 
-#explore1::after, #explore2::after {
-  content: ">";
-  border: 1px solid white;
-  padding: 3px 5px;
-  margin-left: 5px;
-  border-radius: 3px;
-  background-color: white;
-  color: #d11d65;
-  transition: 0.5s;
+#explore1 i {
+  color: red;
+  background-color: red;
 }
 
 #explore1:hover, #explore2:hover {
@@ -888,5 +882,19 @@ label {
   }
   .slidesText h1 {
     font-size: 40px;
+  }
+  .number {
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #d11d65;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
   }
 }/*# sourceMappingURL=style.css.map */
