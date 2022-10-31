@@ -845,8 +845,7 @@ label {
   }
   .centerHead {
     width: 100%;
-    transition: 0.5s;
-    padding-top: 40%;
+    margin-top: 40%;
   }
   .centerHead ul {
     display: block;
