@@ -51,10 +51,16 @@ body{
     z-index: 12112;
 }
 
+.bx-menu-alt-left{
+    display: none;
+}
+
 .menu{
     display: flex;
     z-index: 1;
 }
+
+
 
 .active{
     color: #825b73;
@@ -604,7 +610,7 @@ body{
 }
 
 
-//SKILLS
+//experience
 
 #experience{
     margin-top: $extra-large-margin;
@@ -911,6 +917,7 @@ label{
     .bx-menu-alt-left{
         font-size: $large-font-size;
         transition: 0.5s;
+        display: block;
     }
 
     .bx-x{
@@ -979,6 +986,7 @@ label{
     #home{
         background-position: -200px;
         filter: blur(110);
+        height: 100vh;
     }
     
 
@@ -1012,6 +1020,288 @@ label{
         bottom: 5%;
         left: 50%;
     }
+
+    //about section
+
+    #about{
+        width: 100%;
+        position: relative;
+        height: auto;
+    }
+
+    .about{
+        height: auto;
+        display: block;
+        align-items: center;
+        flex-direction: row-reverse;
+        text-align: center;
+        margin-bottom: $extra-large-margin;
+    }
+    
+    .about img{
+        width: 100%;
+        height: auto;
+        box-shadow: 10px 10px 5px $secondary-background;
+        border-radius: 5px;
+        margin-bottom: $medium-margin;
+    }
+    
+    
+    
+    .leftHandText{
+        width: 100%;
+        margin-right: 0;
+        font-weight: 700;
+    }
+    
+    
+    .leftHandText h1{
+        margin-bottom: $small-margin;
+    }
+    
+    .download{
+        display: inline-block;
+        margin-top: $small-margin;
+        position: relative;
+    }
+
+    //portofolio
+    
+    #portfolio{
+        width: 100%;
+        height: auto;
+        margin-top: $extra-large-margin;
+        background-color: $main-background;
+        position: relative;
+    }
+
+    #portfolio::after{
+        content: '';
+        position:absolute;
+        width:  100%;
+        height: 50%;
+        top: 0;
+        left: 0;
+        background: url(../images/dots.png);
+        z-index: 1;
+        display: block;
+        opacity: 0.1;
+    }
+    
+    #portfolio{
+        margin-top: $extra-large-margin;
+        padding-top: $extra-large-margin;
+    }
+    .portfolioHead{
+        display: flex;
+        align-items: center;
+        height: auto;
+        position: relative;
+    }
+
+
+
+    
+    .portfolioMain{
+        height: auto;
+        display: block;
+        margin-top: $extra-large-margin;
+    }
+    
+    .card{
+        width: 85%;
+        height: 70vh;
+        background-color: $pink-darkest;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        border-radius: 5px;
+        overflow: hidden;
+        z-index: 2;
+        margin-bottom:$medium-margin;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .round1{
+        width: 0px;
+        height: 0px;
+        background-color:#802c4d;
+        position: absolute;
+        top: -10%;
+        left: -10%;
+        z-index: 1;
+        display: block;
+        border-radius: 50%;
+        outline: 60px solid #921648;
+        border: 60px solid #7e2046;
+    }
+
+    //experience
+
+    #experience{
+        margin-top: $extra-large-margin;
+        width: 100%;
+        height: auto;
+        margin-top: $extra-large-margin;
+        background-color: $main-background;
+        position: relative;
+        z-index: 1212;
+    }
+    
+    
+   
+    
+    .experience{
+        display: block;
+        position: relative;
+        text-align: center;
+        margin-top: $medium-margin;
+    }
+    
+    .box{
+        width: 85%;
+        background-color: #4f3746;
+        padding: 1%;
+        position: relative;
+        height:auto;
+        overflow: hidden;
+        transition: 0.5s;
+        margin-bottom: $medium-margin;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+
+    //skills
+    
+    #skills{
+        margin-top: $extra-large-margin;
+        width: 100%;
+        height: auto;
+        opacity: 1;
+    }
+    
+    
+    .skillHead{
+        display: flex;
+        align-items: center;
+        height: auto;
+    }
+    
+    
+    
+    .skillMain{
+        height:auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        position: relative;
+        margin-top: $extra-large-margin;
+    }
+    
+    .skillBox{
+        text-align: center;
+        background-color: $secondary-background;
+        padding: 5%;
+        border-radius: 10px;
+        position: relative;
+        row-gap: 30px;
+        width: 85%;
+        transition: 0.5s;
+        height: 20rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: $medium-margin;
+    }
+    
+    
+    .skillBox img{
+        width: 12rem;
+        height: 12rem;
+        transition: 0.8s;
+    }
+    
+    .skillsMain2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .skillBox:hover img{
+        transform: rotateY(40deg);
+    }
+
+    //CONTACT
+
+    #contact{
+        height: 100vh;
+        margin-top: $extra-large-margin;
+        position: relative;
+        padding: 100px;
+        padding: 0;
+        margin: 0;
+        margin-top: $extra-large-margin;
+    }
+    
+    #myForm{
+        width: 85%;
+        position: relative;
+        margin: auto;
+        margin-top: $extra-large-margin;
+
+    }
+    
+    label{
+        margin-bottom:5px;
+    }
+    
+    .send{
+        margin-top: $small-margin;
+        position: relative;
+        cursor: pointer;
+        border: 1px solid $secondary-background;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #ffff;
+        padding: 5px 20px;
+        background-color: $secondary-background;
+        transition: 0.5s;
+    }
+
+    //
+
+    #footer{
+        margin-top: $extra-large-margin;
+        width: 100%;
+        height: auto;
+    }
+    
+    .address{
+        width: 100%;
+    }
+
+    .address i{
+        margin-right: $small-margin;
+        background-color: #634b5b;
+        padding: 3px;
+        border-radius: 50%;
+    }
+    
+    .links{
+        width: 100%;
+    }
+    
+    #footer .raw{
+        display: block;
+    }
+
+
+
+
+    
 }
 
 
