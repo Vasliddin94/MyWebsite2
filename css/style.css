@@ -42,6 +42,17 @@ body {
   font-size: 32px;
   padding: 8px;
   border-radius: 3px;
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+.bx-up-arrow-alt:hover {
+  opacity: 1;
+  background-color: #d11d65;
+}
+
+.bx-menu-alt-left {
+  display: none;
 }
 
 .active {
