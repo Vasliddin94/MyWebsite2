@@ -69,6 +69,7 @@ body{
     border-radius: 3px;
     opacity: 0.6;
     transition: 0.5s;
+    border: 0.1px solid #ffff;
 }
 
 
@@ -313,6 +314,10 @@ body{
 }
 
 .one:hover{
+    background-color: $secondary-background;
+}
+
+.two:hover{
     background-color: $secondary-background;
 }
 
@@ -974,9 +979,45 @@ label{
     }
 
     //HIDDEN SCREEN
+    #hiddenScreen{
+        width: 80%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-left: auto;
+    }
+    
+    .rightHead{
+        position: absolute;
+        top: 5px;
+        left: 70%;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .rightHead i{
+        animation-name: yon;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes yon {
+        0%{
+            color: $secondary-background;
+        }
+        50%{
+            color: #ffff;
+        }
+
+        100%{
+            color: $secondary-background;
+        }
+
+    }
+    
 
     .hiddenLeftSide{
-        width: 80%;
+        width: 100%;
     }
 
     .hiddenLeftSide img{
@@ -1005,7 +1046,7 @@ label{
 
     //Home
     #home{
-        background-position: -200px;
+        background-position: -250px;
         filter: blur(110);
         height: 100vh;
     }

@@ -44,6 +44,7 @@ body {
   border-radius: 3px;
   opacity: 0.6;
   transition: 0.5s;
+  border: 0.1px solid white;
 }
 
 .bx-up-arrow-alt:hover {
@@ -274,6 +275,10 @@ body {
 }
 
 .one:hover {
+  background-color: #d11d65;
+}
+
+.two:hover {
   background-color: #d11d65;
 }
 
@@ -872,8 +877,52 @@ label {
     width: 100%;
     text-align: left;
   }
-  .hiddenLeftSide {
+  #hiddenScreen {
     width: 80%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: auto;
+  }
+  .rightHead {
+    position: absolute;
+    top: 5px;
+    left: 70%;
+    width: 100%;
+    cursor: pointer;
+  }
+  .rightHead i {
+    -webkit-animation-name: yon;
+            animation-name: yon;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes yon {
+    0% {
+      color: #d11d65;
+    }
+    50% {
+      color: white;
+    }
+    100% {
+      color: #d11d65;
+    }
+  }
+  @keyframes yon {
+    0% {
+      color: #d11d65;
+    }
+    50% {
+      color: white;
+    }
+    100% {
+      color: #d11d65;
+    }
+  }
+  .hiddenLeftSide {
+    width: 100%;
   }
   .hiddenLeftSide img {
     padding-top: 20%;
@@ -893,7 +942,7 @@ label {
     display: none;
   }
   #home {
-    background-position: -200px;
+    background-position: -250px;
     filter: blur(110);
     height: 100vh;
   }
