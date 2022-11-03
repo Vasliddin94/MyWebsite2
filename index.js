@@ -13,15 +13,15 @@ $(document).ready(function() {
 
     
 
-    $(window).scroll(function (event) {
-        var scroll = $(window).scrollTop();
-        if (scroll>200) {
-            $('.rightHead').slideUp();
-        }
-        else if (scroll<200){
-            $('.rightHead').slideDown()
-        }
-    });
+    // $(window).scroll(function (event) {
+    //     var scroll = $(window).scrollTop();
+    //     if (scroll>200) {
+    //         $('.rightHead').slideUp();
+    //     }
+    //     else if (scroll<200){
+    //         $('.rightHead').slideDown()
+    //     }
+    // });
 
 //Show/hide hidden screen
 
