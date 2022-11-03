@@ -36,6 +36,18 @@ body {
   z-index: 1;
 }
 
+.bx-up-arrow-alt {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90vh;
+  background-color: #1C1419;
+  z-index: 12112;
+  left: 90%;
+  font-size: 32px;
+  padding: 8px;
+  border-radius: 3px;
+}
+
 .active {
   color: #825b73;
   transition: 0.5s;

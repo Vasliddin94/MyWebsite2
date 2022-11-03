@@ -60,6 +60,18 @@ body{
     z-index: 1;
 }
 
+//up arrow
+
+.bx-up-arrow-alt{
+    position: sticky;
+    top: 90vh;
+    background-color: $main-background;
+    z-index: 12112;
+    left: 90%;
+    font-size: $large-font-size;
+    padding: 8px;
+    border-radius: 3px;
+}
 
 
 .active{

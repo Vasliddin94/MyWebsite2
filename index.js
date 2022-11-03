@@ -215,5 +215,11 @@ $(document).ready(function() {
     });
 
 
+    //scrolltop
+    $('.bx-up-arrow-alt').click(function (e) {
+        e.preventDefault();
+        $(window).scrollTop(0)
+        
+    })
     
 })
