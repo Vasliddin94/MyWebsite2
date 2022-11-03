@@ -893,8 +893,8 @@ label {
   .rightHead i {
     -webkit-animation-name: yon;
             animation-name: yon;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
   }
