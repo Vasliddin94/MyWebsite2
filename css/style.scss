@@ -922,7 +922,7 @@ label{
 
     .menu{
         display: block;
-        position: absolute;
+        position:absolute;
         top: 0;
         left: 0;
         height: 100vh;
@@ -961,6 +961,7 @@ label{
     .leftHead{
         width: 100%;
         padding-top: 20%;
+        position: relative;
     }
 
     .centerHead{
@@ -992,12 +993,11 @@ label{
         top: 5px;
         left: 70%;
         width: 100%;
-        cursor: pointer;
     }
 
     .rightHead i{
         animation-name: yon;
-        animation-duration: 3s;
+        animation-duration: 2s;
         animation-iteration-count: infinite;
     }
 
