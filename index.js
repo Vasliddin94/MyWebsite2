@@ -13,15 +13,15 @@ $(document).ready(function() {
 
     
 
-    // $(window).scroll(function (event) {
-    //     var scroll = $(window).scrollTop();
-    //     if (scroll>200) {
-    //         $('.rightHead').slideUp();
-    //     }
-    //     else if (scroll<200){
-    //         $('.rightHead').slideDown()
-    //     }
-    // });
+    $(window).scroll(function (event) {
+        var scroll = $(window).scrollTop();
+        if (scroll>200) {
+            $('.rightHead').slideUp();
+        }
+        else if (scroll<200){
+            $('.rightHead').slideDown()
+        }
+    });
 
 //Show/hide hidden screen
 
@@ -169,6 +169,10 @@ $(document).ready(function() {
         $(this).addClass('active')
     });
 
+    $('#explore1').click(function() {
+        $('#aboutmenu').addClass('.active')
+    })
+
     //change the theme
 
     $('.one').click(function(){
@@ -213,6 +217,11 @@ $(document).ready(function() {
         }
         
     });
+
+    $('.main-body').click(function() {
+       $('.menu').slideUp(); 
+       
+    })
 
 
     //scrolltop
