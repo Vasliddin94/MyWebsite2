@@ -55,6 +55,14 @@ $(document).ready(function() {
         }, 700)
     })
 
+    $('.main-body').click(function() {
+        $('.menu').slideUp(); 
+        $('.bx-x').addClass('bx-menu-alt-left')
+        $('.bx-x').prop('id', 'show');
+        $('.bx-x').removeClass('bx-x');  
+        
+     })
+
     $('.card').mouseleave(function(e){
         e.preventDefault()
         $(this).find('.cover').animate({
@@ -88,6 +96,8 @@ $(document).ready(function() {
         }, 500)
         $(this).css('transform', 'scale(1) ');
     })
+
+    
 
     } else {
         $('.rightHead').click(function(e) {
@@ -218,10 +228,7 @@ $(document).ready(function() {
         
     });
 
-    $('.main-body').click(function() {
-       $('.menu').slideUp(); 
-       
-    })
+    
 
 
     //scrolltop
