@@ -30,6 +30,7 @@ body {
 .menu {
   display: flex;
   z-index: 1;
+  transition: smooth;
 }
 
 .bx-up-arrow-alt {
